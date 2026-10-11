@@ -31,14 +31,6 @@ public final class RouteRepository {
         } catch (Exception e) {
             DungeonRoutesClient.LOG.error("Could not enumerate route files", e);
         }
-        Path odin = ConfigManager.root().resolve("odin-waypoints.json");
-        if (Files.exists(odin)) {
-            try (Reader reader = Files.newBufferedReader(odin, StandardCharsets.UTF_8)) {
-                loaded.addAll(OdinWaypointImporter.load(reader));
-            } catch (Exception e) {
-                DungeonRoutesClient.LOG.error("Invalid Odin waypoint file {}", odin, e);
-            }
-        }
         manager.replaceAll(loaded);
         DungeonRoutesClient.LOG.info("Loaded routes for {} rooms", manager.roomCount());
     }

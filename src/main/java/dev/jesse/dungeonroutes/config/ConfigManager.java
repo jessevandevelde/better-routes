@@ -24,7 +24,6 @@ public final class ConfigManager {
         try {
             Files.createDirectories(ROOT.resolve("rooms"));
             Files.createDirectories(ROOT.resolve("routes"));
-            copyBundledIfMissing("/assets/dungeonroutes/data/odin-waypoints.json", ROOT.resolve("odin-waypoints.json"));
             copyBundledIfMissing("/assets/dungeonroutes/data/room-metadata.json", ROOT.resolve("room-metadata.json"));
             if (Files.exists(FILE)) {
                 try (Reader reader = Files.newBufferedReader(FILE, StandardCharsets.UTF_8)) {
