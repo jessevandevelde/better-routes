@@ -1,0 +1,13 @@
+{
+  "roomId": "_schema_example_not_a_real_room",
+  "capability": "default",
+  "routes": {
+    "north": [
+      {"x": 4, "y": 2, "z": 7, "type": "secret", "completion": "interact"},
+      {"x": 11, "y": 3, "z": 13, "type": "secret", "completion": "manual"}
+    ]
+  },
+  "fallback": [
+    {"x": 4, "y": 2, "z": 7, "type": "secret", "completion": "manual"}
+  ]
+}

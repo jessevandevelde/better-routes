@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeonroutes",
+  "version": "${version}",
+  "name": "Dungeon Secret Routes",
+  "description": "Client-side, data-driven Hypixel SkyBlock dungeon room detection and secret route rendering.",
+  "authors": ["Jesse"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.jesse.dungeonroutes.DungeonRoutesClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": "*",
+    "minecraft": "26.1.2",
+    "java": ">=25"
+  }
+}

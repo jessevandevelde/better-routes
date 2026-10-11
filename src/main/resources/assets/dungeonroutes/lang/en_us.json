@@ -1,0 +1,6 @@
+{
+  "key.dungeonroutes.next_waypoint": "Next route waypoint",
+  "key.dungeonroutes.previous_waypoint": "Previous route waypoint",
+  "key.dungeonroutes.reset_route": "Reset current route",
+  "key.dungeonroutes.toggle_rendering": "Toggle route rendering"
+}
