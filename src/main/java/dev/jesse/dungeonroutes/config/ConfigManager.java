@@ -6,6 +6,7 @@ import dev.jesse.dungeonroutes.DungeonRoutesClient;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.Reader;
+import java.io.InputStream;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -23,6 +24,8 @@ public final class ConfigManager {
         try {
             Files.createDirectories(ROOT.resolve("rooms"));
             Files.createDirectories(ROOT.resolve("routes"));
+            copyBundledIfMissing("/assets/dungeonroutes/data/odin-waypoints.json", ROOT.resolve("odin-waypoints.json"));
+            copyBundledIfMissing("/assets/dungeonroutes/data/room-metadata.json", ROOT.resolve("room-metadata.json"));
             if (Files.exists(FILE)) {
                 try (Reader reader = Files.newBufferedReader(FILE, StandardCharsets.UTF_8)) {
                     ModConfig loaded = GSON.fromJson(reader, ModConfig.class);
@@ -45,4 +48,11 @@ public final class ConfigManager {
 
     public static ModConfig get() { return config; }
     public static Path root() { return ROOT; }
+
+    private static void copyBundledIfMissing(String resource, Path destination) throws Exception {
+        if (Files.exists(destination)) return;
+        try (InputStream input = ConfigManager.class.getResourceAsStream(resource)) {
+            if (input != null) Files.copy(input, destination);
+        }
+    }
 }

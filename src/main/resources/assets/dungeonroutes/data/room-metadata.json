@@ -1,0 +1,570 @@
+[
+  {
+    "roomId": "Admin",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Altar",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Andesite",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Archway",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Arrow Trap",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Atlas",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Balcony",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Banners",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Basement",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Beams",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Big Red Flag",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Black Flag",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Blood",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Blue Skulls",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Boulder",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Bridges",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Buttons",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Cage",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Cages",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Carpets",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Cathedral",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Catwalk",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Cell",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Chains",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Chambers",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Cobble Wall Pillar",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Creeper Beams",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Criss-Cross",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Crypt",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Deathmite",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Default",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Diagonal",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Dino Site",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Dip",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Dome",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Doors",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Double Diamond",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Dragon",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Drop",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Dueces",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Duncan",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "End",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Entrance",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Fairy",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Flags",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Gold",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Golden Oasis",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Grand Library",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Granite",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Grass Ruin",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Gravel",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Hall",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Hallway",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Higher Blaze",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Ice Fill",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Ice Path",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Jumping Skulls",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "King Midas",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Knight",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Lava Pit",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Lava Ravine",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Layers",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Leaves",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Locked Away",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Logs",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Long Hall",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Lots Of Floors",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Lower Blaze",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mage",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Market",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Melon",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mines",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mini Rails",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mirror",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mossy",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Multicolored",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mural",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Museum",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Mushroom",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "New Trap",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Old Trap",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Overgrown",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Overgrown Chains",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Painting",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Pedestal",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Perch",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Pipes",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Pirate",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Pit",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Pressure Plates",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Prison Cell",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Purple Flags",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Quad Lava",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Quartz Knight",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Quiz",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Raccoon",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Rail Track",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Rails",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Rare Carpets",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Rare Overgrown",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Rare Pillars",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Red Blue",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Red Green",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Redstone Crypt",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Redstone Key",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Redstone Warrior",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Ritual",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Sand Dragon",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Sarcophagus",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Scaffolding",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Shadow Assassin",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Silver Sword",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Skull",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Slabs",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Slime",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Sloth",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Small Stairs",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Small Waterfall",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Spider",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Spikes",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Staircase",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Stairs",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Steps",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Stone Window",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Supertall",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Teleport Maze",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Temple",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Three Floors",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Three Weirdos",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Tic Tac Toe",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Tombstone",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Tomioka",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Trinity",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "uuughhhh idk what to call it",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Vinny 8 Ball",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Water",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Water Board",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Waterfall",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Well",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Withermancer",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Wizard",
+    "possibleDoors": []
+  },
+  {
+    "roomId": "Zodd",
+    "possibleDoors": []
+  }
+]

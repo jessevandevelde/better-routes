@@ -18,6 +18,8 @@ On first launch the mod creates:
 ```text
 config/dungeonroutes/
 ├── config.json
+├── odin-waypoints.json       # preserved Odin room/waypoint data
+├── room-metadata.json        # possibleDoors overrides for every imported room
 ├── rooms/     # one or more room database JSON files
 └── routes/    # one route JSON file per room/capability set
 ```
@@ -77,6 +79,25 @@ Room coordinates use a local origin. `floorY` is the local Y coordinate of the n
 Use numerous distinctive, stable blocks distributed across the room. Avoid containers, redstone state, doors, torches, skulls, and blocks that Hypixel changes during a run. A definition needs at least four samples; eight or more loaded samples are required before a live match is accepted. The matcher checks every rotation, requires the per-room confidence threshold, requires a margin over the runner-up, and confirms the same result twice. Ambiguous and unknown rooms fail closed.
 
 Door centers must sit on their declared local wall: north uses `z: 0`, east uses `x: width - 1`, south uses `z: length - 1`, and west uses `x: 0`. When `possibleDoors` is present, a wall crossing that is not close to one of its entries is treated as an unknown entrance and therefore selects only the route fallback.
+
+### Imported Odin rooms
+
+The repository includes the supplied Odin `dungeon-waypoint-config.json` unchanged as `odin-waypoints.json`: **142 room names and 308 waypoint markers**. Its SHA-256 at import time is `3AEA717D7F6141F4EB0193407FBB50CBCC889BEED7B2ACADC9D2A2357C3AFBBA`. On first launch both the waypoint file and `room-metadata.json` are copied to the mod configuration directory so they remain user-editable.
+
+Every Odin room is imported as a manual fallback route. The source file contains markers, not verified entrance-specific route ordering, so the importer deliberately does not invent north/east/south/west routes or automatic completion evidence. Explicit JSON files in `routes/` take priority over the imported fallback.
+
+`room-metadata.json` contains an entry like this for every imported room:
+
+```json
+{
+  "roomId": "Temple",
+  "possibleDoors": [
+    {"id": "north_center", "direction": "north", "x": 15, "y": 68, "z": 0}
+  ]
+}
+```
+
+The generated lists are empty because Odin's waypoint file does not contain doorway evidence. Add only doorway coordinates you have verified. Metadata is merged onto a matching fingerprint definition from `rooms/`; metadata alone cannot identify a room. Odin coordinates are retained exactly, including their Y convention, so matching room definitions must use the same local origin.
 
 ## Route format
 
