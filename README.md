@@ -49,6 +49,8 @@ Debug mode shows dungeon state, room ID, origin, rotation, entrance, selected ro
 
 Room coordinates use a local origin. `floorY` is the local Y coordinate of the normal walkable floor. `width`, `length`, and `height` are local bounds. `cells` is optional; use it for non-rectangular multi-cell rooms, with each entry naming a 32-block grid cell in local X/Z. If omitted, the rectangular bounds are used.
 
+`possibleDoors` declares the doorway centers that are valid entrances for this room. Coordinates and directions are room-local, so they rotate automatically with the detected room. Multiple doors may use the same direction. `horizontalTolerance` and `verticalTolerance` are optional and default to 3 and 4 blocks. The older `entrances` string list remains supported as a direction-only fallback when `possibleDoors` is absent.
+
 ```json
 [
   {
@@ -58,7 +60,11 @@ Room coordinates use a local origin. `floorY` is the local Y coordinate of the n
     "height": 40,
     "floorY": 6,
     "matchThreshold": 0.9,
-    "entrances": ["north", "east", "south", "west"],
+    "possibleDoors": [
+      {"id": "north_center", "direction": "north", "x": 15, "y": 6, "z": 0},
+      {"id": "east_upper", "direction": "east", "x": 62, "y": 8, "z": 20,
+       "horizontalTolerance": 2.0, "verticalTolerance": 3.0}
+    ],
     "cells": [{"x": 0, "z": 0}, {"x": 1, "z": 0}, {"x": 0, "z": 1}],
     "fingerprint": [
       {"x": 2, "y": 0, "z": 3, "block": "minecraft:bedrock"},
@@ -69,6 +75,8 @@ Room coordinates use a local origin. `floorY` is the local Y coordinate of the n
 ```
 
 Use numerous distinctive, stable blocks distributed across the room. Avoid containers, redstone state, doors, torches, skulls, and blocks that Hypixel changes during a run. A definition needs at least four samples; eight or more loaded samples are required before a live match is accepted. The matcher checks every rotation, requires the per-room confidence threshold, requires a margin over the runner-up, and confirms the same result twice. Ambiguous and unknown rooms fail closed.
+
+Door centers must sit on their declared local wall: north uses `z: 0`, east uses `x: width - 1`, south uses `z: length - 1`, and west uses `x: 0`. When `possibleDoors` is present, a wall crossing that is not close to one of its entries is treated as an unknown entrance and therefore selects only the route fallback.
 
 ## Route format
 

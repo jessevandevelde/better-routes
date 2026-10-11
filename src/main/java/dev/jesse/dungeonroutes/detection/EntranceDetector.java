@@ -25,6 +25,11 @@ public final class EntranceDetector {
         else if (previous.z() >= room.room().length() && current.z() < room.room().length()) result = CardinalDirection.SOUTH;
         else if (previous.x() < 0 && current.x() >= 0) result = CardinalDirection.WEST;
         if (result == null) return Optional.empty();
+        if (!room.room().possibleDoors().isEmpty()) {
+            CardinalDirection crossingDirection = result;
+            boolean matchesDoor = room.room().possibleDoors().stream().anyMatch(door -> door.matches(crossingDirection, current));
+            return matchesDoor ? Optional.of(result) : Optional.empty();
+        }
         if (!room.room().entrances().isEmpty() && !room.room().entrances().contains(result.name().toLowerCase())) return Optional.empty();
         return Optional.of(result);
     }
